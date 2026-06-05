@@ -1,0 +1,23 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v10.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v10.0": {
+      "Logics_Exercices/1.0.0": {
+        "runtime": {
+          "Logics_Exercices.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "Logics_Exercices/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}

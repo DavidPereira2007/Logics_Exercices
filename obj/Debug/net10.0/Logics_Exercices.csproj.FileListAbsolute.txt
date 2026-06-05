@@ -1,0 +1,15 @@
+C:\Users\david\source\repos\Logics_Exercices\bin\Debug\net10.0\Logics_Exercices.exe
+C:\Users\david\source\repos\Logics_Exercices\bin\Debug\net10.0\Logics_Exercices.deps.json
+C:\Users\david\source\repos\Logics_Exercices\bin\Debug\net10.0\Logics_Exercices.runtimeconfig.json
+C:\Users\david\source\repos\Logics_Exercices\bin\Debug\net10.0\Logics_Exercices.dll
+C:\Users\david\source\repos\Logics_Exercices\bin\Debug\net10.0\Logics_Exercices.pdb
+C:\Users\david\source\repos\Logics_Exercices\obj\Debug\net10.0\Logics_Exercices.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\david\source\repos\Logics_Exercices\obj\Debug\net10.0\Logics_Exercices.AssemblyInfoInputs.cache
+C:\Users\david\source\repos\Logics_Exercices\obj\Debug\net10.0\Logics_Exercices.AssemblyInfo.cs
+C:\Users\david\source\repos\Logics_Exercices\obj\Debug\net10.0\Logics_Exercices.csproj.CoreCompileInputs.cache
+C:\Users\david\source\repos\Logics_Exercices\obj\Debug\net10.0\Logics_Exercices.sourcelink.json
+C:\Users\david\source\repos\Logics_Exercices\obj\Debug\net10.0\Logics_Exercices.dll
+C:\Users\david\source\repos\Logics_Exercices\obj\Debug\net10.0\refint\Logics_Exercices.dll
+C:\Users\david\source\repos\Logics_Exercices\obj\Debug\net10.0\Logics_Exercices.pdb
+C:\Users\david\source\repos\Logics_Exercices\obj\Debug\net10.0\Logics_Exercices.genruntimeconfig.cache
+C:\Users\david\source\repos\Logics_Exercices\obj\Debug\net10.0\ref\Logics_Exercices.dll
