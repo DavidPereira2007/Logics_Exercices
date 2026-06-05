@@ -8,11 +8,19 @@ class Program
         double average = GradeAverage.Calculateaverage(grades);
         Console.WriteLine($"The average grade is: {average:F2}");
     }
+
+    private static void convertorTimeExercice()
+    {
+        int totalSeconds = 3665; // seconds exemple for testing
+        var (hours, minutes, seconds) = Convertor_time.ConvertSeconds(totalSeconds);
+        Console.WriteLine($"{totalSeconds} seconds is equal to {hours} hours, {minutes} minutes and {seconds} seconds.");
+    }
     
     static void Main()
     {
         Console.WriteLine("Run program");
-        averageExercice();
+        //averageExercice();
+        convertorTimeExercice();
     }
 }
         
