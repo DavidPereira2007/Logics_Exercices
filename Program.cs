@@ -1,4 +1,5 @@
 ﻿using System;
+using Bank_account;
 using Exercice;
 class Program
 {
@@ -23,12 +24,24 @@ class Program
 
         Console.WriteLine(Vowels);
     }
+
+    private static void Bank_Account()
+    {
+        Bank bank = new Bank();
+
+        User user1 = Bank_Service.Create_User(bank,"David", 15000);
+
+        bank.InfoAccounts();
+
+        // depois fazer um loop simples pra:
+        // Adicionar user, depositar, transferir, sacar
+    }
     
     static void Main()
     {
         Console.WriteLine("Run program");
         //averageExercice();
-        Vowel_counterExerice();
+        Bank_Account();
     }
 }
         
