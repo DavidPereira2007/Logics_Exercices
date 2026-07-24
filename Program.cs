@@ -15,12 +15,20 @@ class Program
         var (hours, minutes, seconds) = Convertor_time.ConvertSeconds(totalSeconds);
         Console.WriteLine($"{totalSeconds} seconds is equal to {hours} hours, {minutes} minutes and {seconds} seconds.");
     }
+
+    private static void Vowel_counterExerice()
+    {
+        string word = "Aladin";
+        int Vowels = VowelCounter.CountVowels(word);
+
+        Console.WriteLine(Vowels);
+    }
     
     static void Main()
     {
         Console.WriteLine("Run program");
         //averageExercice();
-        convertorTimeExercice();
+        Vowel_counterExerice();
     }
 }
         
