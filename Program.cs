@@ -1,6 +1,7 @@
 ﻿using System;
 using Bank_account;
 using Exercice;
+using Library;
 class Program
 {
     private static void averageExercice()
@@ -29,19 +30,41 @@ class Program
     {
         Bank bank = new Bank();
 
-        User user1 = Bank_Service.Create_User(bank,"David", 15000);
+        Bank_account.User user1 = Bank_Service.Create_User(bank,"David", 15000);
 
         bank.InfoAccounts();
 
         // depois fazer um loop simples pra:
         // Adicionar user, depositar, transferir, sacar
     }
+
+    private static void LibraryExercice()
+    {
+        Library.User user1 = new Library.User();
+        user1.Create_User("David");
+
+        Library.User user2 = new Library.User();
+        user1.Create_User("Breno");
+
+        // Books
+        LibraryService.Create_Books("Teoria dos mares", "Um livro sobre os mares", 350);
+        LibraryService.Create_Books("As aventuras do doutor pinto", "Um livro que conta as maravilhosas aventuras do doutor pinto um grande cientista", 400);
+        LibraryService.Create_Books("Em Busca do castelo encantado", "A historia mais encantada de todos os tempos porém trágica", 2500);
+        LibraryService.Create_Books("Comidas de teodoro", "Descubra as incriveis receitas do maior cozinheiro teodoro", 200);
+        LibraryService.Create_Books("Grite", "Mergulhe nesse livro cheio de suspense e terror", 625);
+        LibraryService.Create_Books("Uma lição de vida", "Leia sobre uma historia que você pode levar para toda a vida", 400);
+
+        LibraryService.Get_Book(5, user1);
+
+        LibraryService.List_Books();
+
+    }
     
     static void Main()
     {
         Console.WriteLine("Run program");
         //averageExercice();
-        Bank_Account();
+        LibraryExercice();
     }
 }
         
