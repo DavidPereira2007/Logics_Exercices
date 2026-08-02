@@ -2,6 +2,7 @@
 using Bank_account;
 using Exercice;
 using Library;
+using shopping_cart;
 class Program
 {
     private static void averageExercice()
@@ -59,12 +60,23 @@ class Program
         LibraryService.List_Books();
 
     }
+
+    private static void Shopping_cartsExercice()
+    {
+        Shopping_cartService.Create_Product("Laptop", 1500.0);
+        Shopping_cartService.Create_Product("Mouse", 25.0);
+        Shopping_cartService.Create_Cart();
+        Shopping_cartService.Add_Product_To_Cart(3, 1);
+        Shopping_cartService.Add_Product_To_Cart(3, 2);
+        Shopping_cartService.Calculate_Cart_Total(3);
+    }
     
     static void Main()
     {
         Console.WriteLine("Run program");
         //averageExercice();
-        LibraryExercice();
+       //LibraryExercice();
+        Shopping_cartsExercice();
     }
 }
         

@@ -1,0 +1,1 @@
+program of Shopping cart with functions of add products, remove products and calculate total
