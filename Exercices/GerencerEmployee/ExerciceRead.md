@@ -1,0 +1,1 @@
+Program of Gerencer salary Employees for apply deductions, increases, and net pay

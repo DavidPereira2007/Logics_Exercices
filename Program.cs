@@ -3,6 +3,7 @@ using Bank_account;
 using Exercice;
 using Library;
 using shopping_cart;
+using GerencerEmployee;
 class Program
 {
     private static void averageExercice()
@@ -70,13 +71,26 @@ class Program
         Shopping_cartService.Add_Product_To_Cart(3, 2);
         Shopping_cartService.Calculate_Cart_Total(3);
     }
+
+    private static void GerencerEmployeeExercice()
+    {
+        GerencerEmployeeService.Create_Employee("David", 5000);
+        GerencerEmployeeService.Create_Employee("Breno", 6000);
+        GerencerEmployeeService.List_Employees();
+        //GerencerEmployeeService.Increase_Salary(1, 10);
+        //GerencerEmployeeService.Deduct_Salary(2, 5);
+        //GerencerEmployeeService.List_Employees();
+
+        GerencerEmployeeService.Calculate_NetPay(1);
+        GerencerEmployeeService.Calculate_NetPay(2);
+    }
     
     static void Main()
     {
         Console.WriteLine("Run program");
         //averageExercice();
        //LibraryExercice();
-        Shopping_cartsExercice();
+        GerencerEmployeeExercice();
     }
 }
         
