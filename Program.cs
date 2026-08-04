@@ -4,6 +4,7 @@ using Exercice;
 using Library;
 using shopping_cart;
 using GerencerEmployee;
+using Universal_converter;
 class Program
 {
     private static void averageExercice()
@@ -84,13 +85,38 @@ class Program
         GerencerEmployeeService.Calculate_NetPay(1);
         GerencerEmployeeService.Calculate_NetPay(2);
     }
+
+    private static void ConvertorExercice()
+    {
+        // celsius to fahrenheit
+        //double celsius = 25.0; // Celsius example for testing
+        //double fahrenheit = ConverterService.CelsiusToFahrenheit(celsius);
+        //Console.WriteLine($"{celsius} °C is equal to {fahrenheit:F2} °F.");
+
+        // kilometer to mile
+        //decimal kilometers = 10.0m; // Kilometers example for testing
+        //decimal miles = ConverterService.KilometerToMile(kilometers);
+        //Console.WriteLine($"{kilometers} kilometers is equal to {miles:F2} miles.");
+
+        // hours to minutes
+        //int hours = 2; // Hours example for testing
+        //int minutes = ConverterService.HoursToMinutes(hours);
+        //Console.WriteLine($"{hours} hours is equal to {minutes} minutes.");
+
+        // real to dollar
+        //double reais = 100.0; // Reais example for testing
+        //double exchangeRate = 5.09; // Exchange rate example for testing
+        //double dollars = ConverterService.RealToDollar(reais, exchangeRate);
+        //Console.WriteLine($"{reais} reais is equal to {dollars:F2} dollars.");
+
+    }
     
     static void Main()
     {
         Console.WriteLine("Run program");
         //averageExercice();
        //LibraryExercice();
-        GerencerEmployeeExercice();
+        ConvertorExercice();
     }
 }
         
