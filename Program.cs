@@ -5,6 +5,7 @@ using Library;
 using shopping_cart;
 using GerencerEmployee;
 using Universal_converter;
+using Calculator;
 class Program
 {
     private static void averageExercice()
@@ -110,13 +111,17 @@ class Program
         //Console.WriteLine($"{reais} reais is equal to {dollars:F2} dollars.");
 
     }
-    
+
+    private static void CalculatorExercice()
+    {
+        Calculator.CalculatorProgram.InitProgram();
+    }    
     static void Main()
     {
         Console.WriteLine("Run program");
         //averageExercice();
        //LibraryExercice();
-        ConvertorExercice();
+        CalculatorExercice();
     }
 }
         
