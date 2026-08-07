@@ -24,24 +24,36 @@ public static class CalculatorProgram
             Console.Write("Enter your choice (1-5): ");
             string? choice = Console.ReadLine();
 
-            if (choice == "5")
+            if (choice != "1" && choice != "2" && choice != "3" && choice != "4" && choice != "5") // Verify if the choice is valid
+            {
+                Console.WriteLine("Invalid choice. Please try again.");
+                continue;
+            }
+
+            if (choice == "5") // If choice is 5, exit the program
             {
                 Console.WriteLine("Exiting the program. Goodbye!");
                 break;
             }
-            
+
             Console.Write("Enter the first number: ");
-            double num1 = Convert.ToDouble(Console.ReadLine());
+            var num1 = Console.ReadLine();
 
             Console.Write("Enter the second number: ");
-            double num2 = Convert.ToDouble(Console.ReadLine());
+            var num2 = Console.ReadLine();
 
-            double result = choice switch
+            if (!double.TryParse(num1, out double number1) || !double.TryParse(num2, out double number2)) // Verify if the inputs are valid numbers, if inputs is valid, convert to the new variables number1 and number2
             {
-                "1" => CalculatorMain.Add(num1, num2),
-                "2" => CalculatorMain.Subtract(num1, num2),
-                "3" => CalculatorMain.Multiply(num1, num2),
-                "4" => CalculatorMain.Divide(num1, num2),
+                Console.WriteLine("Invalid input. Please enter valid numbers.");
+                continue;
+            }
+
+            double result = choice switch // Call the CalculatorMain methods based in theu ser choice, and return result for the user
+            {
+                "1" => CalculatorMain.Add(number1, number2),
+                "2" => CalculatorMain.Subtract(number1, number2),
+                "3" => CalculatorMain.Multiply(number1, number2),
+                "4" => CalculatorMain.Divide(number1, number2),
                 _ => throw new InvalidOperationException("Invalid choice.")
             };
 
