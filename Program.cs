@@ -8,6 +8,7 @@ using Universal_converter;
 using Calculator;
 using LoginSystem;
 using SignUp_Products.Presentations;
+using Grading.Presentation;
 class Program
 {
     private static void averageExercice()
@@ -130,7 +131,8 @@ class Program
        //LibraryExercice();
         //CalculatorExercice();
         //LoginSystemExercice();
-        SigUpProgram.init();
+        //SigUpProgram.init();
+        GradingProgram.init();
     }
 }
         
