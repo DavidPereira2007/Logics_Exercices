@@ -6,6 +6,7 @@ using shopping_cart;
 using GerencerEmployee;
 using Universal_converter;
 using Calculator;
+using LoginSystem;
 class Program
 {
     private static void averageExercice()
@@ -116,12 +117,18 @@ class Program
     {
         Calculator.CalculatorProgram.InitProgram();
     }    
+
+    private static void LoginSystemExercice()
+    {
+        LoginSystem.LoginProgram.InitProgram();
+    }
     static void Main()
     {
         Console.WriteLine("Run program");
         //averageExercice();
        //LibraryExercice();
-        CalculatorExercice();
+        //CalculatorExercice();
+        LoginSystemExercice();
     }
 }
         
