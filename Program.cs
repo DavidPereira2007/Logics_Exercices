@@ -7,6 +7,7 @@ using GerencerEmployee;
 using Universal_converter;
 using Calculator;
 using LoginSystem;
+using SignUp_Products.Presentations;
 class Program
 {
     private static void averageExercice()
@@ -128,7 +129,8 @@ class Program
         //averageExercice();
        //LibraryExercice();
         //CalculatorExercice();
-        LoginSystemExercice();
+        //LoginSystemExercice();
+        SigUpProgram.init();
     }
 }
         
