@@ -9,6 +9,7 @@ using Calculator;
 using LoginSystem;
 using SignUp_Products.Presentations;
 using Grading.Presentation;
+using Operator;
 class Program
 {
     private static void averageExercice()
@@ -131,8 +132,9 @@ class Program
        //LibraryExercice();
         //CalculatorExercice();
         //LoginSystemExercice();
-        //SigUpProgram.init();
-        GradingProgram.init();
+        //SigUpProgram.init();317
+        //GradingProgram.init();
+       Console.Write(Squareroot.FindSquareRoot(45));
     }
 }
         
