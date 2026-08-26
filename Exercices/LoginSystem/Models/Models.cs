@@ -14,6 +14,7 @@ public class User
 
     public void Create_User(string username, string password)
     {
+        this.id = IdGenerator.GerarProximoId();
         this.username = username;
         this.password = password;
     }

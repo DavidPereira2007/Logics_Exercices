@@ -1,3 +1,8 @@
+////////////////////////////////////////
+/// by: David de Sousa Pereira 17/08/2026
+/// Code: Square root Operation System
+////////////////////////////////////////
+
 namespace Operator;
 
 using System;
