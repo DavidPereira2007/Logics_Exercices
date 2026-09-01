@@ -134,7 +134,10 @@ class Program
         //LoginSystemExercice();
         //SigUpProgram.init();317
         //GradingProgram.init();
-       Console.Write(RomanNumeral.ConvertoNumeralRoman("VI"));
+       //Console.Write(RomanNumeral.ConvertoNumeralRoman("XIX"));
+
+       //Console.WriteLine(MMC.FindMMC(100, 200)); // MMC Simples 
+       Console.WriteLine(MMC.FindComplexMMC(new int[] {20, 56, 89, 90, 34})); // MMC Complexo
     }
 }
         
