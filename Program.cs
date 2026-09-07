@@ -10,6 +10,8 @@ using LoginSystem;
 using SignUp_Products.Presentations;
 using Grading.Presentation;
 using Operator;
+using Hangman;
+
 class Program
 {
     private static void averageExercice()
@@ -137,7 +139,9 @@ class Program
        //Console.Write(RomanNumeral.ConvertoNumeralRoman("XIX"));
 
        //Console.WriteLine(MMC.FindMMC(100, 200)); // MMC Simples 
-       Console.WriteLine(MMC.FindComplexMMC(new int[] {20, 56, 89, 90, 34})); // MMC Complexo
+       //Console.WriteLine(MMC.FindComplexMMC(new int[] {20, 56, 89, 90, 34})); // MMC Complexo
+       
+       HangmanSystem.PlayHangman();
     }
 }
         
